@@ -4,3 +4,33 @@
     margin: -25rem;
     
 }
+
+.skill-section{
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.8 ), rgba($color-primary-dark, 0.8)),
+    url(../../img/background1.jpg);
+    position: relative;
+    padding: 20rem 0;
+    margin-top: -20rem;
+    clip-path: ellipse( 70% 50% at 50% 50%);
+     
+    // .col1{
+    //     display: inline-block;
+    //     display: grid;
+    // grid-column-gap: 50px;
+    // grid-template-columns: auto auto auto auto;
+    // background-color: #2196F3;
+    // }
+    
+    
+}
+
+.section-courses{
+    background-color: $color-primary-light-1;
+    padding: 25rem 0 10rem 0;
+    margin-top: -20rem;
+}
+
+
+
+
+

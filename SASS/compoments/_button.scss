@@ -51,6 +51,16 @@
             background-color: $color-white;
         }
     }
+    &--blue{
+        margin-top: 5rem;
+        color: $color-white;
+        background-color: $color-primary;
+
+        &::after{
+            background-color: $color-primary;
+        }
+
+    }
 
     &--animated {
         animation: moveInBottom .5s ease-out .75s;

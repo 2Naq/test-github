@@ -92,7 +92,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -133,6 +134,13 @@ body {
   background-color: #fff; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--blue {
+  margin-top: 5rem;
+  color: #fff;
+  background-color: #5a73fc; }
+  .btn--blue::after {
+    background-color: #5a73fc; }
 
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
@@ -267,12 +275,59 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
+    border-radius: 5rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     backface-visibility: hidden; }
     .card__side--front {
-      background-color: #e213d8; }
+      background-color: #fff; }
     .card__side--back {
       background-color: green;
       transform: rotateY(180deg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+    .card__heading-span {
+      border-radius: 5rem;
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone; }
+      .card__heading-span--1 {
+        background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 136, 48, 0.85)); }
+      .card__heading-span--2 {
+        background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+      .card__heading-span--3 {
+        background-image: linear-gradient(to right bottom, #8e9efc, #1c3eff); }
+  .card__details {
+    padding: 3rem;
+    color: #777777; }
+    .card__details ul {
+      list-style: none;
+      margin: auto;
+      width: 70%; }
+      .card__details ul li {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #bdbdbd; }
+  .card__picture {
+    background-blend-mode: screen;
+    background-size: cover;
+    height: 23rem;
+    clip-path: ellipse(80% 70% at 50% 30%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right, #ffb900, #ff8830), url(../../img/involve1.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right, #55c57a, #28b485), url(../../img/involve2.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right, #8e9efc, #1c3eff), url(../../img/involve3.jpg); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {

@@ -30,7 +30,14 @@
     margin-top: -20rem;
 }
 
+.section-testimonials{
+    background-color: $color-primary-light-1;
+    padding: 5rem 0;
+    position: relative;
+    z-index: 1;
+}
 
-
-
-
+.section-enroll{
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}

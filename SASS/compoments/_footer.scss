@@ -11,8 +11,9 @@
       height: auto; }
     &__title {
       display: block;
-      color: #5a73fc;
+      color: $color-primary;
       letter-spacing: 4rem; }
+
     &__copyright {
       border-top: 3px solid #fff;
       width: 70%;
@@ -23,18 +24,24 @@
       padding-top: 2rem;
       display: inline-block; }
     &__list {
-      list-style: none; }
+      list-style: none;
+    }
     &__item {
-      display: inline-block; }
-      &__item:not(:last-child) {
+      display: inline-block; 
+
+      &:not(:last-child) {
         margin-right: 1.5rem; }
-    &__link:link,
-     &:visited {
-      color: #8e9efc;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: inline-block;
-      border-radius: 5rem; }
+     }
+
+    &__link:link, &__link:visited {
+          color: #f7f7f7;
+          background-color: #333;
+          text-transform: uppercase;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 5rem;
+          transition: all .2s;
+    }
     &__link:hover, &__link:active {
       color: red;
       transform: rotate(5deg) scale(1.3);
